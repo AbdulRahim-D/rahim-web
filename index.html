@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahim Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="anthropic.svg">
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      font-family: "poppins";
+      
+    }
+    header {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+    }
+    header h1 {
+      background-image: linear-gradient(
+        45deg,
+        #511c8c,
+        #411a8d,
+        #201c6d,
+        #201c57
+      );
+      margin: 0px;
+      text-align: center;
+      padding: 0.75rem 0em;
+      font-weight: 800;
+      color: white;
+      font-size: 1.7rem;
+    }
+    #hero-section {
+      margin: 1em 0em;
+      padding: 3em;
+      width: auto;
+      display: flex;
+      justify-content: space-evenly;
+   box-shadow: 0px 8px 5px -7px rgba(0,0,0,0.34);
+-webkit-box-shadow: 0px 8px 5px -7px rgba(0,0,0,0.34);
+-moz-box-shadow: 0px 8px 5px -7px rgba(0,0,0,0.34);
+    }
+    #hero-section img {
+      width: 40%;
+    }
+    #hero-section #content-section {
+      width: 50%;
+      /* border: 1px solid; */
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #hero-section #content-section h1 {
+      margin: 0px;
+      font-size: 3em;
+    }
+    #hero-section #content-section p {
+      font-size: 1.4em;
+      padding: 0em 0.5em;
+      line-height: 1.8em;
+      margin: 0px;
+    }
+    #card-section {
+      /* border: 1px solid; */
+      padding: 3em;
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    #card-section div {
+      border: 2px solid #511c8c;
+      padding: 2rem;
+      width: 20%;
+      height: 18rem;
+      text-align: center;
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-evenly;
+      flex-direction: column;
+      border-radius: 2em;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    #card-section div:hover {
+      translate: 0em -0.75em ;
+      transition-duration: 500ms;
+      transition-timing-function: 250ms;
+    }
+    #card-section div h2 {
+      margin: 0em;
+    }
+    #card-section div ul {
+      padding-left: 0px;
+      margin: 0px;
+    }
+    #card-section div p {
+      margin: 0px;
+      font-size: 0.75rem;
+      color: #999;
+    }
+    footer {
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-top: 20px;
+      background-image: linear-gradient(
+        45deg,
+        #511c8c,
+        #411a8d,
+        #201c6d,
+        #201c57
+      );
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+    footer h1 {
+      text-decoration: underline;
+      font-size: 2.5rem;
+    }
+    footer h1,
+    h2 {
+      margin: 0.5rem 0em;
+    }
+    footer h2 {
+      margin-bottom: 0.25rem;
+    }
+    footer p {
+      font-size: 1rem;
+      line-height: 1.75rem;
+      margin: 0px;
+      width: 50%;
+    }
+    #title {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 0px;
+    }
+        footer  #profile-details{
+      display: flex;
+      margin-top: 20px;
+      width: 20%;
+      justify-content: space-evenly;
+    }
+  footer  #profile-details a{
+      color: #fff;
+      font-size: 1.5em;
+    }
+
+    @media screen and (max-width: 600px) {
+      #hero-section {
+        flex-direction: column-reverse;
+      }
+      #hero-section img {
+        width: auto;
+      }
+      #hero-section #content-section {
+        width: auto;
+      }
+      #hero-section #content-section h1 {
+        font-size: 2em;
+        margin: 0.5em 0em;
+      }
+      #hero-section #content-section p {
+        font-size: 1.2em;
+        margin: 0.5em 0em;
+      }
+      #card-section {
+        width: auto;
+        padding: 1.5em;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      #card-section div {
+        height: 19rem;
+        margin: 1em 0em;
+        width: 75%;
+      }
+      footer h1 {
+        font-size: 2rem;
+      }
+      footer h2 {
+        font-size: 1.5rem;
+      }
+      footer p {
+        width: 100%;
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+      }
+    footer  #profile-details{
+      width: 40%;
+      font-size: 1em;
+    }
+    }
+     @media screen and (min-width:601px) and (max-width: 1024px) {
+      #hero-section {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+      #hero-section img {
+        width: 65%;
+        height: 30%;
+      }
+      #hero-section #content-section {
+        width: auto;
+      }
+      #hero-section #content-section h1 {
+        font-size: 2em;
+        margin: 0.5em 0em;
+      }
+      #hero-section #content-section p {
+        font-size: 1.2em;
+        margin: 0.5em 0em;
+      }
+      #card-section {
+        width: auto;
+        padding: 1.5em;
+
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      #card-section div {
+        height: 20rem;
+        padding: 0.5em;
+        margin: 1em 0em;
+        width: 19em;
+      }
+      footer h1 {
+        font-size: 2rem;
+      }
+      footer h2 {
+        font-size: 1.5rem;
+      }
+      footer p {
+        width: 100%;
+        line-height: 1.5rem;
+      }
+    footer  #profile-details{
+      width: 40%;
+    }
+    }
+
+  </style>
+  <body>
+    <header>
+      <h1>Abdul Rahim</h1>
+    </header>
+    <div id="hero-section">
+      <div id="content-section">
+        <h1>This is Abdul Rahim!</h1>
+        <p>
+          I’m a student at Sri Venkateswara Polytechnic College, Tirupati. Right
+          now, I’m interning at ThoughtWorks, Hyderabad, learning web
+          development with HTML, CSS, and JavaScript by actually building
+          things. just like this WebPage.
+        </p>
+      </div>
+      <img
+        src="https://i.pinimg.com/736x/0e/ea/60/0eea607fc451a0100a8ddce0fa93aa2f.jpg"
+        alt=""
+      />
+    </div>
+    <h1 id="title">What i am Learning</h1>
+    <div id="card-section">
+      <div id="html-card">
+        <h2>HTML</h2>
+        <ul type="none">
+          <li>Foundation</li>
+          <li>Markup</li>
+          <li>Meaning</li>
+          <li>Web</li>
+        </ul>
+        <p>Skeleton of the Webpage</p>
+      </div>
+      <div id="css-card">
+        <h2>CSS</h2>
+        <ul type="none">
+          <li>Style</li>
+          <li>Layout</li>
+          <li>Design</li>
+          <li>Responsive</li>
+        </ul>
+
+        <p>Beauty of the Webpage</p>
+      </div>
+      <div id="js-card">
+        <h2>JavaScript</h2>
+        <ul type="none">
+          <li>Logic</li>
+          <li>Interaction</li>
+          <li>Behavior</li>
+          <li>Dynamic</li>
+        </ul>
+        <p>Brain of the Webpage</p>
+      </div>
+      <div id="responsive-card">
+        <h2>Responsive Design</h2>
+        <ul type="none">
+          <li>Mobile</li>
+          <li>Flexible</li>
+          <li>Adaptive</li>
+          <li>Modern</li>
+        </ul>
+        <p>Fits Every Screen</p>
+      </div>
+    </div>
+    <footer>
+      <h1>Our Mentor</h1>
+      <h2>Praveen Gubbala</h2>
+      <p>
+        He is our skillful mentor who teaches web technologies with great
+        patience and clear real-life examples. He gives his 100% to ensure we
+        understand every topic without skipping anything. His classes are
+        engaging and enjoyable—he explains concepts with enthusiasm, adds humor
+        in between, and regularly checks whether we are understanding or not. He
+        has built many websites and has worked with large clients, which adds
+        real-world value to his teaching. He constantly motivates us, boosts our
+        confidence, and creates a positive learning environment. We truly admire
+        and appreciate him
+      </p>
+      <div id="profile-details">
+        <a href="https://www.linkedin.com/in/abdul-rahim-dudekula"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:abdulrahimcc4516@gmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/AbdulRahim-D" ><i class="bi bi-github"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
